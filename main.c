@@ -18,8 +18,8 @@
 #define BLUE_COLOR 0xFFFF0000
 #define WHITE_COLOR 0xFFFFFFFF
 
-#define IMAGE_WIDTH 384
-#define IMAGE_HEIGHT 216
+#define IMAGE_WIDTH 3840
+#define IMAGE_HEIGHT 2160
 #define OUTPUT_FILE_PPM "./output.ppm"
 #define OUTPUT_FILE_PNG "\\output.png"
 
@@ -164,6 +164,6 @@ int main(int argc, char **argv) {
     draw_voronoi();
     // draw_seeds();
     render_image(OUTPUT_FILE_PPM);
-    change_windows_bg();
+    // change_windows_bg();
     return 0;
 }
